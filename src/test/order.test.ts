@@ -86,10 +86,10 @@ describe('compartments', () => {
     ])
     const build = compartmentsFor(monday, 'elite', 'veg')
     expect(build[0].items[0]).toBe('Multigrain Dosa + Peanut Chutney')
-    expect(build[1].items).toEqual(['Palak Paneer + Rajma'])
+    expect(build[1].items).toEqual(['Spiced Soy Chunks'])
     expect(build[2].items).toEqual(['Roasted Pepper Yogurt Dip'])
     expect(build[3].items).toEqual(['Black Chickpea & Peanut Salad'])
-    expect(build[4].items).toEqual(['Fermented Rice'])
+    expect(build[4].items).toEqual(['Beetroot Mint Buttermilk'])
   })
 })
 

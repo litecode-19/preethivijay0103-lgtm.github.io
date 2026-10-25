@@ -19,9 +19,10 @@ export function MobileMenuCard({ day, size, diet }: { day: DayMenu; size: Size; 
 
   return (
     <article id={`${day.id}-mobile`} className="scroll-mt-40 overflow-hidden rounded-[1.75rem] bg-white shadow-sm ring-1 ring-black/5">
-      <img src={photo} alt={`${day.name} ${size} breakfast box`} className="h-60 w-full bg-[#f4f1ea] object-contain" />
+      <img src={photo} alt={`${day.meal}, ${day.name} ${size} breakfast box`} className="h-60 w-full bg-[#f4f1ea] object-contain" />
       <div className="px-4 pt-4 pb-2">
-        <h3 className="font-display text-3xl font-bold text-leaf-900">{day.name}</h3>
+        <p className="text-xs font-semibold tracking-[0.16em] text-stone-400 uppercase">{day.name}</p>
+        <h3 className="font-display text-3xl font-bold text-leaf-900">{day.meal}</h3>
         <p className="mt-1 flex items-center gap-2 text-sm text-stone-600">
           <Dumbbell size={16} className="text-leaf-700" aria-hidden />
           <span>{protein} g protein</span>

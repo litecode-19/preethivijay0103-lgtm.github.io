@@ -28,12 +28,13 @@ export function HomeWeekCarousel({ className = '', imageClassName }: Props) {
         >
           <img
             src={photoFor(day, PREVIEW_SIZE, PREVIEW_DIET)}
-            alt={`${day.name} ${SIZES[PREVIEW_SIZE].label} breakfast box`}
+            alt={`${day.meal}, ${day.name} ${SIZES[PREVIEW_SIZE].label} breakfast box`}
             className={`${defaultImageClass} ${imageClassName ?? ''} group-active:-translate-y-1 group-active:shadow-xl sm:group-hover:-translate-y-2 sm:group-hover:rotate-0 sm:group-hover:shadow-xl`}
             loading="lazy"
           />
           <div className="absolute right-2 bottom-2 left-2 rounded-2xl bg-cream/95 px-3 py-2.5">
-            <p className="font-display text-sm font-semibold tracking-[0.12em] text-leaf-900 uppercase">{day.name}</p>
+            <p className="text-[10px] font-semibold tracking-[0.14em] text-stone-400 uppercase">{day.short}</p>
+            <p className="font-display text-sm font-semibold text-leaf-900">{day.meal}</p>
           </div>
         </Link>
       ))}

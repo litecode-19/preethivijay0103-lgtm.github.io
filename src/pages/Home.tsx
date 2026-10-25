@@ -23,7 +23,7 @@ const TICKER = [
   'Launch offer on full boxes',
   'Order by 9 pm',
   'Monday to Friday only',
-  ...WEEK.map((day) => `${day.name}: ${day.main.name.split('+')[0].trim()}`),
+  ...WEEK.map((day) => `${day.name}: ${day.meal}`),
 ]
 
 const FACTS = [

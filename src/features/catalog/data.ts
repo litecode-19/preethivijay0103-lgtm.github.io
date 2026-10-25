@@ -16,6 +16,7 @@ export interface DayMenu {
   id: 'mon' | 'tue' | 'wed' | 'thu' | 'fri'
   short: string
   name: string
+  meal: string
   images: Record<PhotoSize, Record<Diet, string>>
   main: DishCopy
   salad: DishCopy
@@ -64,7 +65,7 @@ export type DrinkId = 'day' | 'buttermilk' | 'juice' | 'kanji' | 'shake' | 'smoo
 export const DRINKS: Record<DrinkId, { label: string; note: string }> = {
   day: {
     label: "Follow the day's drink",
-    note: 'Mon fermented rice, Tue watermelon cooler, Wed fermented pearl millet, Thu fermented finger millet, Fri spiced buttermilk.',
+    note: 'Mon beetroot mint buttermilk, Tue watermelon-lime cooler, Wed spiced buttermilk, Thu ragi kanji, Fri lemon-ginger chia water.',
   },
   buttermilk: { label: 'Buttermilk', note: 'Every morning. Dairy.' },
   juice: { label: 'Fruit juice', note: 'Every morning.' },
@@ -90,6 +91,7 @@ export const WEEK: DayMenu[] = [
     id: 'mon',
     short: 'Mon',
     name: 'Monday',
+    meal: 'Six-Grain Sunrise',
     images: {
       lean: { veg: '/images/mon-lean-veg-4.jpg', nonveg: '/images/mon-lean-nonveg-4.jpg' },
       build: { veg: '/images/mon-build-veg-4.jpg', nonveg: '/images/mon-build-nonveg-4.jpg' },
@@ -102,12 +104,12 @@ export const WEEK: DayMenu[] = [
     salad: dish(
       'Black Chickpea & Peanut Salad',
       'Kala chana & peanut salad',
-      'Black chickpeas · Roasted peanuts · Cucumber · Carrot · Tomato · Lime',
+      'Black chickpeas · Roasted peanuts · Cucumber · Carrot · Tomato · Lime · Pomegranate · Pumpkin, flax & chia seeds',
     ),
     drink: dish(
-      'Fermented Rice',
-      'Pazhaya sadam kanji',
-      'Overnight-fermented rice · Buttermilk · Shallots · Naturally probiotic',
+      'Beetroot Mint Buttermilk',
+      'Beetroot mint buttermilk',
+      'Low-fat curd · Beetroot · Mint · Coriander · Roasted cumin · No sugar · STRONG and ELITE only',
     ),
     sauce: dish(
       'Roasted Pepper Yogurt Dip',
@@ -118,12 +120,12 @@ export const WEEK: DayMenu[] = [
       nonveg: dish(
         'Black Pepper Chicken',
         'Pepper chicken',
-        'Chicken breast · Crushed black pepper · Curry leaves · Ginger-garlic · Lime',
+        'Chicken breast · Crushed black pepper · Curry leaves · Ginger-garlic · Lime · Toasted sesame · Boiled egg (STRONG, ELITE)',
       ),
       veg: dish(
-        'Palak Paneer + Rajma',
-        'Palak paneer + rajma',
-        'Paneer · Spinach · Rajma · Garlic · Tomato',
+        'Spiced Soy Chunks',
+        'Soya chunks masala',
+        'Soy chunks · Onion-tomato masala · Ginger-garlic · Lime',
       ),
     },
   },
@@ -131,6 +133,7 @@ export const WEEK: DayMenu[] = [
     id: 'tue',
     short: 'Tue',
     name: 'Tuesday',
+    meal: 'Millet Morning',
     images: {
       lean: { veg: '/images/tue-lean-veg-4.jpg', nonveg: '/images/tue-lean-nonveg-4.jpg' },
       build: { veg: '/images/tue-build-veg-4.jpg', nonveg: '/images/tue-build-nonveg-4.jpg' },
@@ -143,12 +146,12 @@ export const WEEK: DayMenu[] = [
     salad: dish(
       'Sprouts & Kidney Bean Salad',
       'Sprout & rajma salad',
-      '8-legume sprouts · Rajma · Cabbage · Capsicum · Lime',
+      '8-legume sprouts · Rajma · Cabbage · Capsicum · Lime · Pomegranate · Pumpkin, flax & chia seeds',
     ),
     drink: dish(
-      'Watermelon Cooler',
-      'Watermelon cooler',
-      'Fresh watermelon · No added sugar',
+      'Watermelon-Lime Hydration Cooler',
+      'Watermelon-lime cooler',
+      'Watermelon · Lime · Mint · Urban Platter tender coconut water powder · No added sugar by us · STRONG and ELITE only',
     ),
     sauce: dish(
       'Chickpea Sauce',
@@ -158,13 +161,13 @@ export const WEEK: DayMenu[] = [
     protein: {
       nonveg: dish(
         'Chicken Tikka',
-        'Chicken tikka',
-        'Chicken breast · Tikka spices · Ginger-garlic · Lime · Onion & tomato',
+        'Chicken tikka (hung-curd marinade)',
+        'Chicken breast · Hung curd · Tikka spices · Kasuri methi · Onion & capsicum · Toasted sesame · Soya chunks (STRONG, ELITE)',
       ),
       veg: dish(
-        'Paneer Tikka + Bean & Sprout Chaat',
-        'Paneer tikka + rajma-sprout chaat',
-        'Paneer · Tikka spices · Rajma · Sprouts · Lime',
+        'Paneer Tikka + Whole Masoor Chaat',
+        'Paneer tikka + whole masoor chaat',
+        'Paneer · Tikka spices · Whole masoor · Onion · Tomato · Lime · Toasted sesame',
       ),
     },
   },
@@ -172,6 +175,7 @@ export const WEEK: DayMenu[] = [
     id: 'wed',
     short: 'Wed',
     name: 'Wednesday',
+    meal: 'Midweek Green',
     images: {
       lean: { veg: '/images/wed-lean-veg-4.jpg', nonveg: '/images/wed-lean-nonveg-4.jpg' },
       build: { veg: '/images/wed-build-veg-4.jpg', nonveg: '/images/wed-build-nonveg-4.jpg' },
@@ -182,30 +186,30 @@ export const WEEK: DayMenu[] = [
       'Sweet potato · Chickpea flour (besan) · Thick hung curd · Green chilli',
     ),
     salad: dish(
-      'Black Bean & Corn Salad',
-      'Black bean & corn salad',
-      'Black beans · Sweet corn · Capsicum · Tomato · Lime',
+      'Moong Sprout Salad with Sweet Corn',
+      'Moong sprout salad with sweet corn',
+      'Sprouted green moong · Sweet corn · Capsicum · Tomato · Lime · Pomegranate · Pumpkin, flax & chia seeds',
     ),
     drink: dish(
-      'Fermented Pearl Millet',
-      'Kambu kanji',
-      'Pearl millet (kambu) · Buttermilk · Shallots · Naturally probiotic',
+      'Spiced Buttermilk',
+      'Spiced buttermilk (neer mor)',
+      'Low-fat curd · Ginger · Green chilli · Coriander · Curry leaves · STRONG and ELITE only',
     ),
     sauce: dish(
-      'Roasted Red Pepper Sauce',
-      'Red bell pepper sauce',
-      'Fire-roasted red peppers · Garlic · Lemon · Chilli flakes',
+      'Garlic & Cucumber Hung Curd Dip',
+      'Garlic & cucumber hung curd dip',
+      'Hung curd · Cucumber · Garlic · Mint · Black pepper · No oil',
     ),
     protein: {
       nonveg: dish(
-        'Broccoli Omelette + Herb & Lemon Chicken Bites',
-        'Broccoli omelette + chicken herb & lemon bites',
-        'Whole egg · Broccoli · Chicken breast · Lemon · Coriander · Black pepper',
+        'Broccoli Omelette + Herb Yogurt Chicken',
+        'Broccoli omelette + herb yogurt chicken',
+        'Whole egg · Broccoli · Chicken breast · Curd · Coriander · Mint · Roasted garlic · Whole spices · Toasted sesame',
       ),
       veg: dish(
-        'Spiced Soy Chunks',
-        'Soya chunks masala',
-        'Soy chunks · Onion-tomato masala · Ginger-garlic · Lime',
+        'Palak Paneer + Rajma',
+        'Palak paneer + rajma',
+        'Paneer · Spinach · Rajma · Garlic · Tomato · Toasted sesame',
       ),
     },
   },
@@ -213,38 +217,39 @@ export const WEEK: DayMenu[] = [
     id: 'thu',
     short: 'Thu',
     name: 'Thursday',
+    meal: 'Morning Harvest',
     images: {
       lean: { veg: '/images/thu-lean-veg-4.jpg', nonveg: '/images/thu-lean-nonveg-4.jpg' },
       build: { veg: '/images/thu-build-veg-4.jpg', nonveg: '/images/thu-build-nonveg-4.jpg' },
     },
     main: dish(
-      'Oats Paddu + Chutney',
-      'Oats paddu + chutney',
-      'Rolled oats · Curd · Sweet corn · Carrot · Capsicum · Onion-tomato chutney',
+      'Paddu + Chutney',
+      'Paddu + chutney',
+      'Idli rice & urad dal batter · Onion · Carrot · Curry leaves · Onion-tomato chutney',
     ),
     salad: dish(
-      'Soybean & Beetroot Salad',
-      'Soybean & beetroot salad',
-      'Soybeans · Beetroot · Carrot · Cucumber · Lime',
+      'Golden Dry Bean & Beetroot Salad',
+      'Golden dry bean & beetroot salad',
+      'Golden dry bean (soybean) · Beetroot · Carrot · Cucumber · Lime · Pomegranate · Pumpkin, flax & chia seeds',
     ),
     drink: dish(
-      'Fermented Finger Millet',
-      'Ragi koozh',
-      'Ragi (finger millet) · Buttermilk · Shallots · Naturally probiotic',
+      'Ragi Kanji',
+      'Ragi kanji',
+      'Ragi (finger millet) · Buttermilk · Shallots · STRONG and ELITE only',
     ),
     sauce: dish(
-      'Chickpea Sauce',
-      'Chickpea sauce (low fat)',
-      'Chickpeas · Hung curd · Lemon · Roasted cumin · No oil',
+      'Mint & Coriander Hung Curd Dip',
+      'Mint & coriander hung curd dip',
+      'Hung curd · Fresh mint · Coriander · Roasted cumin · No oil',
     ),
     protein: {
       nonveg: dish(
-        'Boiled Egg Salad + Chicken Garlic & Curd Roast',
-        'Boiled egg salad + chicken garlic & curd roast',
-        'Boiled egg · Chicken breast · Garlic · Curd · Lemon · Black pepper',
+        'Boiled Egg Salad + Chicken Cafreal',
+        'Boiled egg salad + chicken cafreal',
+        'Boiled egg · Potato · Carrot · Lemon · Chaat masala · Chicken breast · Coriander · Green chilli · Soy sauce · Toasted sesame',
       ),
       veg: dish(
-        'Soy & Sweet Potato Cutlet',
+        'Soya & Sweet Potato Cutlet',
         'Soya sweet potato cutlet',
         'Soy granules · Sweet potato · Chickpea flour · Ginger · Coriander',
       ),
@@ -254,6 +259,7 @@ export const WEEK: DayMenu[] = [
     id: 'fri',
     short: 'Fri',
     name: 'Friday',
+    meal: 'Feel-Good Friday',
     images: {
       lean: { veg: '/images/fri-lean-veg-4.jpg', nonveg: '/images/fri-lean-nonveg-4.jpg' },
       build: { veg: '/images/fri-build-veg-4.jpg', nonveg: '/images/fri-build-nonveg-4.jpg' },
@@ -264,30 +270,30 @@ export const WEEK: DayMenu[] = [
       'Ragi (finger millet) · Steamed, not fried · Fresh coconut milk',
     ),
     salad: dish(
-      'Sprouts & Sweet Potato Salad',
-      'Sprout & sweet potato salad',
-      '8-legume sprouts · Sweet potato · Cucumber · Carrot · Lime',
+      'Sprout Salad with Sweet Potato',
+      'Sprout salad with sweet potato',
+      '8-legume sprouts · Sweet potato · Cucumber · Carrot · Lime · Pomegranate · Pumpkin, flax & chia seeds',
     ),
     drink: dish(
-      'Spiced Buttermilk',
-      'Buttermilk (mor)',
-      'Fresh curd · Ginger · Curry leaves',
+      'Lemon-Ginger Chia Water',
+      'Lemon-ginger chia water',
+      'Lemon · Ginger · Mint · Chia seeds · No sugar · STRONG and ELITE only',
     ),
     sauce: dish(
-      'Roasted Pepper Yogurt Dip',
-      'Hung curd sauce',
-      'Hung curd · Roasted red bell pepper · Honey · Thyme',
+      'Tandoori Hung Curd Dip',
+      'Tandoori hung curd dip',
+      'Hung curd · Tandoori spices · Ginger-garlic · Lemon · No oil',
     ),
     protein: {
       nonveg: dish(
-        'Spiced Grilled Chicken',
-        'Grilled chicken',
-        'Chicken breast · Cinnamon, cloves & bay leaf · Black pepper · Cumin · Lemon',
+        'Curry Leaf Crunch Chicken',
+        'Curry leaf crunch chicken',
+        'Chicken breast · Curry leaves · Fennel · Mustard · Hung curd · Egg & cornflour coating · Toasted sesame · Boiled egg (STRONG, ELITE)',
       ),
       veg: dish(
-        'Spinach Paneer with Soy Mince',
-        'Spinach paneer + soy granules',
-        'Paneer · Spinach · Soy granules · Whole spices · Lemon',
+        'Soya Paneer Broccoli Protein Bowl',
+        'Soya paneer broccoli bowl',
+        'Soya chunks · Paneer · Broccoli · Red/yellow capsicum · Corn · Carrot · Soy sauce · Lemon · Toasted sesame',
       ),
     },
   },

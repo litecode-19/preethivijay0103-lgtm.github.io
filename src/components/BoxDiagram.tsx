@@ -87,6 +87,7 @@ function MenuRow({
           <p className={`mt-0.5 leading-tight text-leaf-900 ${highlight ? 'text-lg font-bold' : 'text-base font-semibold'}`}>
             {value}
           </p>
+          {highlights ? <p className="mt-1 text-xs leading-5 text-stone-500">{highlights}</p> : null}
           {!open ? (
             <p className="mt-1 text-xs font-semibold text-leaf-900/55">Tap for protein & kcal</p>
           ) : null}

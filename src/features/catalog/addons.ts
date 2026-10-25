@@ -60,17 +60,17 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
     },
     "drink": {
       "core": {
-        "name": "Fermented Rice",
+        "name": "Beetroot Mint Buttermilk",
         "price": 30,
         "protein": 2.7
       },
       "strong": {
-        "name": "Fermented Rice",
+        "name": "Beetroot Mint Buttermilk",
         "price": 30,
         "protein": 2.7
       },
       "elite": {
-        "name": "Fermented Rice",
+        "name": "Beetroot Mint Buttermilk",
         "price": 30,
         "protein": 2.7
       }
@@ -95,17 +95,17 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
     "protein": {
       "veg": {
         "core": {
-          "name": "Palak Paneer + Rajma",
+          "name": "Spiced Soy Chunks",
           "price": 100,
           "protein": 14.5
         },
         "strong": {
-          "name": "Palak Paneer + Rajma",
+          "name": "Spiced Soy Chunks",
           "price": 130,
           "protein": 21.7
         },
         "elite": {
-          "name": "Palak Paneer + Rajma",
+          "name": "Spiced Soy Chunks",
           "price": 170,
           "protein": 26.2
         }
@@ -166,17 +166,17 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
     },
     "drink": {
       "core": {
-        "name": "Watermelon Cooler",
+        "name": "Watermelon-Lime Hydration Cooler",
         "price": 40,
         "protein": 0.8
       },
       "strong": {
-        "name": "Watermelon Cooler",
+        "name": "Watermelon-Lime Hydration Cooler",
         "price": 40,
         "protein": 0.8
       },
       "elite": {
-        "name": "Watermelon Cooler",
+        "name": "Watermelon-Lime Hydration Cooler",
         "price": 40,
         "protein": 0.8
       }
@@ -201,17 +201,17 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
     "protein": {
       "veg": {
         "core": {
-          "name": "Paneer Tikka + Bean & Sprout Chaat",
+          "name": "Paneer Tikka + Whole Masoor Chaat",
           "price": 100,
           "protein": 14.0
         },
         "strong": {
-          "name": "Paneer Tikka + Bean & Sprout Chaat",
+          "name": "Paneer Tikka + Whole Masoor Chaat",
           "price": 130,
           "protein": 22.5
         },
         "elite": {
-          "name": "Paneer Tikka + Bean & Sprout Chaat",
+          "name": "Paneer Tikka + Whole Masoor Chaat",
           "price": 160,
           "protein": 32.5
         }
@@ -255,51 +255,51 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
     },
     "salad": {
       "core": {
-        "name": "Black Bean & Corn Salad",
+        "name": "Moong Sprout Salad with Sweet Corn",
         "price": 70,
         "protein": 7.9
       },
       "strong": {
-        "name": "Black Bean & Corn Salad",
+        "name": "Moong Sprout Salad with Sweet Corn",
         "price": 60,
         "protein": 5.8
       },
       "elite": {
-        "name": "Black Bean & Corn Salad",
+        "name": "Moong Sprout Salad with Sweet Corn",
         "price": 70,
         "protein": 8.1
       }
     },
     "drink": {
       "core": {
-        "name": "Fermented Pearl Millet",
+        "name": "Spiced Buttermilk",
         "price": 30,
         "protein": 4.0
       },
       "strong": {
-        "name": "Fermented Pearl Millet",
+        "name": "Spiced Buttermilk",
         "price": 30,
         "protein": 4.0
       },
       "elite": {
-        "name": "Fermented Pearl Millet",
+        "name": "Spiced Buttermilk",
         "price": 30,
         "protein": 4.0
       }
     },
     "sauce": {
       "core": {
-        "name": "Roasted Red Pepper Sauce",
+        "name": "Garlic & Cucumber Hung Curd Dip",
         "price": 10,
         "protein": 0.2
       },
       "strong": {
-        "name": "Roasted Red Pepper Sauce",
+        "name": "Garlic & Cucumber Hung Curd Dip",
         "price": 10,
         "protein": 0.2
       },
       "elite": {
-        "name": "Roasted Red Pepper Sauce",
+        "name": "Garlic & Cucumber Hung Curd Dip",
         "price": 10,
         "protein": 0.2
       }
@@ -307,34 +307,34 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
     "protein": {
       "veg": {
         "core": {
-          "name": "Spiced Soy Chunks",
+          "name": "Palak Paneer + Rajma",
           "price": 60,
           "protein": 9.1
         },
         "strong": {
-          "name": "Spiced Soy Chunks",
+          "name": "Palak Paneer + Rajma",
           "price": 80,
           "protein": 22.1
         },
         "elite": {
-          "name": "Spiced Soy Chunks",
+          "name": "Palak Paneer + Rajma",
           "price": 90,
           "protein": 27.3
         }
       },
       "nonveg": {
         "core": {
-          "name": "Broccoli Omelette",
+          "name": "Broccoli Omelette + Herb Yogurt Chicken",
           "price": 80,
           "protein": 7.4
         },
         "strong": {
-          "name": "Broccoli Omelette + Herb & Lemon Chicken Bites",
+          "name": "Broccoli Omelette + Herb Yogurt Chicken",
           "price": 140,
           "protein": 20.1
         },
         "elite": {
-          "name": "Broccoli Omelette + Herb & Lemon Chicken Bites",
+          "name": "Broccoli Omelette + Herb Yogurt Chicken",
           "price": 170,
           "protein": 27.3
         }
@@ -344,68 +344,68 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
   "thu": {
     "main": {
       "core": {
-        "name": "Oats Paddu + Chutney",
+        "name": "Paddu + Chutney",
         "price": 60,
         "protein": 6.7
       },
       "strong": {
-        "name": "Oats Paddu + Chutney",
+        "name": "Paddu + Chutney",
         "price": 60,
         "protein": 6.2
       },
       "elite": {
-        "name": "Oats Paddu + Chutney",
+        "name": "Paddu + Chutney",
         "price": 60,
         "protein": 6.2
       }
     },
     "salad": {
       "core": {
-        "name": "Soybean & Beetroot Salad",
+        "name": "Golden Dry Bean & Beetroot Salad",
         "price": 50,
         "protein": 3.0
       },
       "strong": {
-        "name": "Soybean & Beetroot Salad",
+        "name": "Golden Dry Bean & Beetroot Salad",
         "price": 50,
         "protein": 4.9
       },
       "elite": {
-        "name": "Soybean & Beetroot Salad",
+        "name": "Golden Dry Bean & Beetroot Salad",
         "price": 60,
         "protein": 10.6
       }
     },
     "drink": {
       "core": {
-        "name": "Fermented Finger Millet",
+        "name": "Ragi Kanji",
         "price": 30,
         "protein": 3.1
       },
       "strong": {
-        "name": "Fermented Finger Millet",
+        "name": "Ragi Kanji",
         "price": 30,
         "protein": 3.1
       },
       "elite": {
-        "name": "Fermented Finger Millet",
+        "name": "Ragi Kanji",
         "price": 30,
         "protein": 3.1
       }
     },
     "sauce": {
       "core": {
-        "name": "Chickpea Sauce",
+        "name": "Mint & Coriander Hung Curd Dip",
         "price": 10,
         "protein": 0.6
       },
       "strong": {
-        "name": "Chickpea Sauce",
+        "name": "Mint & Coriander Hung Curd Dip",
         "price": 10,
         "protein": 0.6
       },
       "elite": {
-        "name": "Chickpea Sauce",
+        "name": "Mint & Coriander Hung Curd Dip",
         "price": 10,
         "protein": 0.6
       }
@@ -413,34 +413,34 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
     "protein": {
       "veg": {
         "core": {
-          "name": "Soy & Sweet Potato Cutlet",
+          "name": "Soya & Sweet Potato Cutlet",
           "price": 70,
           "protein": 16.7
         },
         "strong": {
-          "name": "Soy & Sweet Potato Cutlet",
+          "name": "Soya & Sweet Potato Cutlet",
           "price": 90,
           "protein": 27.1
         },
         "elite": {
-          "name": "Soy & Sweet Potato Cutlet",
+          "name": "Soya & Sweet Potato Cutlet",
           "price": 90,
           "protein": 29.7
         }
       },
       "nonveg": {
         "core": {
-          "name": "Boiled Egg Salad + Chicken Garlic & Curd Roast",
+          "name": "Boiled Egg Salad + Chicken Cafreal",
           "price": 120,
           "protein": 16.7
         },
         "strong": {
-          "name": "Boiled Egg Salad + Chicken Garlic & Curd Roast",
+          "name": "Boiled Egg Salad + Chicken Cafreal",
           "price": 160,
           "protein": 25.1
         },
         "elite": {
-          "name": "Boiled Egg Salad + Chicken Garlic & Curd Roast",
+          "name": "Boiled Egg Salad + Chicken Cafreal",
           "price": 180,
           "protein": 29.5
         }
@@ -467,51 +467,51 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
     },
     "salad": {
       "core": {
-        "name": "Sprouts & Sweet Potato Salad",
+        "name": "Sprout Salad with Sweet Potato",
         "price": 50,
         "protein": 5.0
       },
       "strong": {
-        "name": "Sprouts & Sweet Potato Salad",
+        "name": "Sprout Salad with Sweet Potato",
         "price": 50,
         "protein": 6.3
       },
       "elite": {
-        "name": "Sprouts & Sweet Potato Salad",
+        "name": "Sprout Salad with Sweet Potato",
         "price": 50,
         "protein": 6.3
       }
     },
     "drink": {
       "core": {
-        "name": "Spiced Buttermilk",
+        "name": "Lemon-Ginger Chia Water",
         "price": 40,
         "protein": 3.2
       },
       "strong": {
-        "name": "Spiced Buttermilk",
+        "name": "Lemon-Ginger Chia Water",
         "price": 40,
         "protein": 3.2
       },
       "elite": {
-        "name": "Spiced Buttermilk",
+        "name": "Lemon-Ginger Chia Water",
         "price": 40,
         "protein": 3.2
       }
     },
     "sauce": {
       "core": {
-        "name": "Roasted Pepper Yogurt Dip",
+        "name": "Tandoori Hung Curd Dip",
         "price": 10,
         "protein": 0.5
       },
       "strong": {
-        "name": "Roasted Pepper Yogurt Dip",
+        "name": "Tandoori Hung Curd Dip",
         "price": 10,
         "protein": 0.5
       },
       "elite": {
-        "name": "Roasted Pepper Yogurt Dip",
+        "name": "Tandoori Hung Curd Dip",
         "price": 10,
         "protein": 0.5
       }
@@ -519,34 +519,34 @@ export const ADDONS: Record<DayMenu['id'], DayAddons> = {
     "protein": {
       "veg": {
         "core": {
-          "name": "Spinach Paneer with Soy Mince",
+          "name": "Soya Paneer Broccoli Protein Bowl",
           "price": 100,
           "protein": 19.1
         },
         "strong": {
-          "name": "Spinach Paneer with Soy Mince",
+          "name": "Soya Paneer Broccoli Protein Bowl",
           "price": 110,
           "protein": 26.9
         },
         "elite": {
-          "name": "Spinach Paneer with Soy Mince",
+          "name": "Soya Paneer Broccoli Protein Bowl",
           "price": 150,
           "protein": 36.6
         }
       },
       "nonveg": {
         "core": {
-          "name": "Spiced Grilled Chicken",
+          "name": "Curry Leaf Crunch Chicken",
           "price": 110,
           "protein": 18.0
         },
         "strong": {
-          "name": "Spiced Grilled Chicken",
+          "name": "Curry Leaf Crunch Chicken",
           "price": 160,
           "protein": 27.6
         },
         "elite": {
-          "name": "Spiced Grilled Chicken",
+          "name": "Curry Leaf Crunch Chicken",
           "price": 210,
           "protein": 37.2
         }
